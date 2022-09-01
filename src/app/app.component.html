@@ -1,0 +1,5 @@
+<h1>Latest exchange rates:</h1>
+<div *ngIf="rates$ | async as rates">
+  <p>1 USD = {{ rates.EUR }} EUR</p>
+  <p>1 USD = {{ rates.GBP }} GBP</p>
+</div>
